@@ -18,12 +18,12 @@ function lengthCheck(password){
 //returns true or false if there is an uppercase character in the password
 function upperCaseCheck(password){
 
-  for(let i = 0; i < password.fromCharCode; i++){
+  for(let i = 0; i < password.CharCodeAt; i++){
 
-    if(password.fromCharCode(i) >= String.fromCharCode(65) && (password.fromCharCode(i) <= String.fromCharCode(90))){
+    if(password.CharCodeAt(i) >= 65 && (password.CharCodeAt(i) <= 90)){
       return true;
     }
-    else if(password.fromCharCode(i) <= String.fromCharCode(65) || (password.fromCharCode(i) >= String.fromCharCode(90))){
+    else if(password.CharCodeAt(i) <= 65 || (password.CharCodeAt(i) >= 90)){
       return false;
     }
 
@@ -40,9 +40,16 @@ function upperCaseCheck(password){
 //returns true or false if there is an lowercase character in the password
 function lowerCaseCheck(password){
 
-  for(let i = 0; i < password.fromCharCode; i++){
+  for(let i = 0; i < password.CharCodeAt; i++){
 
-    if(password.fromCharCode(i) >= String.fromCharCode (97) && (password.fromCharCode))
+    if(password.CharCodeAt(i) >= 97 && (password.CharCodeAt(i) >= 122)){
+      return true;
+    }
+
+
+    else if(password.CharCodeAt(i) <= 97 || (password.CharCodeAt(i) <= 122)){
+      return false;
+    }
   }
 
 
@@ -57,6 +64,10 @@ function lowerCaseCheck(password){
 
 //returns true or false if there is a numerical character
 function numberCheck(password){
+  for(let i = 0; i < password.CharCodeAt; i++){
+
+    if(password.CharCodeAt(i) >= 48)
+  }
 
 
 }
